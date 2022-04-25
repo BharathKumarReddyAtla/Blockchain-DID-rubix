@@ -1,0 +1,6 @@
+RubiX chain is an aggregation of several account-chains existing in parallel. Transactions achieve consensus individually, allowing for asynchronous parallelism leading to very high scalability. Account-chains are linked through unique tokens & tokenchain hashes.
+The Rubix Proofchain protocol is a deterministic state-machine that is designed to address the scale, cost, and privacy shortcomings of blockchain protocols that rely on one sequentially organized chain of all global transactions.
+The protocol divides the global statemachine into a large, but finite number of state-machines called Proofchains.
+While each Proofchain maintains one state, together all Proofchains represent a globally accessible singleton state that is immutable. 
+This paper explains various components that make up the protocol.
+The Rubix global state will be made of about 51.4 million Proofchains. Each Proofchain is bound by one unique utility token. A ProofChain PT is made of all transactions that use token Tn to confirm. All transactions within a Proofchain PT are validated individually and sequentially. However, transactions of different Proofchains are validated asynchronously and parallelly.
